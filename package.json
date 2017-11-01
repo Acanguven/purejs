@@ -1,0 +1,29 @@
+{
+  "name": "purejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sslgenerate": "openssl req -x509 -newkey rsa:4096 -keyout ssl/key.pem -out ssl/cert.pem -days 365"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Acanguven/purejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Acanguven/purejs/issues"
+  },
+  "homepage": "https://github.com/Acanguven/purejs#readme",
+  "dependencies": {
+    "compression": "^1.7.1",
+    "express": "^4.16.2",
+    "helmet": "^3.9.0",
+    "lasso": "^2.11.21",
+    "lasso-marko": "^2.3.1",
+    "marko": "^4.5.6",
+    "spdy": "^3.4.7"
+  }
+}
