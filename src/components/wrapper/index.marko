@@ -1,9 +1,12 @@
+$ const style = ('max-width: ' + (input.width || 1080)) + 'px;' + (input.mobilePadding ?  'padding: 0px '+ input.mobilePadding + 'px' : '');
+
 style {
     .wrapper {
         margin: 0px auto;
         width:100%;
+        box-sizing: border-box;
     }
 }
 
-div.wrapper style="max-width: ${input.width}px"
+div.wrapper style=style
     include(input.content)
