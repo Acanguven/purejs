@@ -11,76 +11,18 @@ $ const mock = {
     }
 }
 
-style {
-    .post-summary {
-        margin-top: 20px;
-    }
-
-    .post-summary:first-child {
-        margin-top: 0px !important;
-    }
-
-    .post-summary.white {
-        background-color: #fff;
-    }
-
-    .post-summary .title {
-        padding: 20px;
-        font-size: 2.6rem;
-        font-weight: 700;
-    }
-
-    .post-summary .author {
-        background-color: #F2F2F2;
-        height: 40px;
-        padding: 5px 20px;
-        box-sizing: border-box;
-        line-height: 30px;
-    }
-
-    .post-summary .author span {
-        font-size: 0.9rem;
-    }
-
-    .post-summary .author a {
-        margin-left: 10px;
-    }
-
-    .post-summary .author span {
-        float: right;
-    }
-
-    .post-summary .content {
-        padding: 20px;
-        font-weight: 400;
-        line-height: 1.5;
-    }
-
-    .post-summary .tags {
-        background-color: #F2F2F2;
-        height: 40px;
-        padding: 5px 20px;
-        box-sizing: border-box;
-        line-height: 30px;
-    }
-
-    .post-summary .tags a{
-        margin-left: 10px;
-    }
-}
-
 div.post-summary.${input.type ? input.type : 'white'}
     div.title
         a href=mock.link
             -- ${mock.title}
-    div.author
+    div.author.color-2
         emoji code=mock.author.emoji
         a href=mock.author.github -- ${mock.author.name}
         span
             emoji code='calendar'
             -- ${mock.date}
     div.content -- ${mock.content}
-    div.tags
+    div.tags.color-2
         a for(tag in mock.tags) href='/tag/'+tag
             emoji code='link'
             -- ${tag}

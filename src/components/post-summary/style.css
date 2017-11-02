@@ -1,0 +1,75 @@
+.post-summary {
+    margin-top: 20px;
+}
+
+.post-summary.black {
+    background-color: #3a3939;
+    color: #eee;
+}
+
+.post-summary.black .color-2 {
+    background-color: #302f2f !important;
+}
+
+.post-summary.white {
+    background-color: #fff;
+}
+
+.post-summary.white .color-2{
+    background-color: #F2F2F2;
+}
+
+.post-summary.blue {
+    background-color: #428bca;
+    color: #eee;
+}
+
+.post-summary.blue .color-2{
+    background-color: #5bc0de;
+}
+
+.post-summary:first-child {
+    margin-top: 0px !important;
+}
+
+.post-summary .title {
+    padding: 20px;
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.post-summary .author {
+    height: 40px;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    line-height: 30px;
+}
+
+.post-summary .author span {
+    font-size: 0.9rem;
+}
+
+.post-summary .author a {
+    margin-left: 10px;
+}
+
+.post-summary .author span {
+    float: right;
+}
+
+.post-summary .content {
+    padding: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.post-summary .tags {
+    height: 40px;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    line-height: 30px;
+}
+
+.post-summary .tags a{
+    margin-left: 10px;
+}
