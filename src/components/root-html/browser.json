@@ -1,5 +1,6 @@
 {
   "dependencies": [
-    "./normalize.css"
+    "./normalize.css",
+    "./pwa-starter.js"
   ]
 }

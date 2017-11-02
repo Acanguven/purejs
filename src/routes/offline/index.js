@@ -5,5 +5,5 @@ const handler = (req, res) => {
 };
 
 module.exports = (app) => {
-  app.get('/', handler);
+  app.get('/offline.html', handler);
 };

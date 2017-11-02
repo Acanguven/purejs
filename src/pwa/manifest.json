@@ -1,0 +1,15 @@
+{
+  "short_name": "PureJS",
+  "name": "PureJs Blog",
+  "background_color": "#24292e",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "launcher-icon-1x.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    }
+  ],
+  "theme_color": "#24292e",
+  "start_url": "/?utm_source=homescreen"
+}
