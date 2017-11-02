@@ -17,7 +17,7 @@ require('marko/browser-refresh').enable();
 
 
 /* Lasso */
-require('lasso/node-require-no-op').enable('.css', '.less', '.styl', '.scss', '.sass', '.ico','.png');
+require('lasso/node-require-no-op').enable('.css', '.less', '.styl', '.scss', '.sass', '.ico','.png', '.svg');
 require('lasso').configure({
   "plugins": [
       "lasso-marko",
@@ -30,6 +30,8 @@ require('lasso').configure({
   "bundlingEnabled": true,
   "relativeUrlsEnabled": true,
 });
+
+console.log(process.env.NODE_ENV);
 
 const port = 443;
 const spdy = require('spdy');
