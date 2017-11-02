@@ -4,6 +4,10 @@
     </@layoutHead>
     <@layoutContent>
         <header/>
-        <include(input.body) />
+        <wrapper width=720>
+            <@content>
+                <include(input.body) />
+            </@content>
+        </wrapper>
     </@layoutContent>
 </root-html>
