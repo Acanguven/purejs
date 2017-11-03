@@ -71,3 +71,26 @@
         width: 80px;
     }
 }
+
+@media only screen and (max-width: 340px) {
+    .header img{
+        width: 20px;
+        height: 20px;
+        margin-top: 10px;
+    }
+
+    .header a{
+        width: 15px;
+        height: 15px;
+        font-size: 17px;
+        margin-left: 5px;
+    }
+
+    .header div span {
+        font-size: 12px;
+    }
+
+    .header input:focus{
+        width: 70px;
+    }
+}
