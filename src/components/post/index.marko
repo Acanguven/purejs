@@ -1,0 +1,28 @@
+$ const mock = {
+    date: '11/2/2017',
+    link: '#postlink',
+    title: 'Creating a new tech blog!',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum turpis ex, non mattis nulla blandit at. Etiam ultrices lobortis egestas. Etiam euismod purus nisl, vitae tempus felis gravida sed. Donec id bibendum enim. Sed pharetra, ligula ut venenatis faucibus, sapien felis sodales lacus, nec mollis ex nisi ultrices arcu. Nam auctor lectus mauris, vitae faucibus ligula auctor sed. Aenean ultricies felis non dui rhoncus, eget porttitor metus aliquet. Curabitur a nulla est. Etiam dictum aliquam diam. Pellentesque ornare posuere arcu sit amet facilisis. Maecenas hendrerit rhoncus dictum. Sed auctor augue in turpis fermentum, vehicula lacinia tortor faucibus. Vivamus ornare gravida placerat. Quisque ultricies in lorem ut maximus.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum turpis ex, non mattis nulla blandit at. Etiam ultrices lobortis egestas. Etiam euismod purus nisl, vitae tempus felis gravida sed. Donec id bibendum enim. Sed pharetra, ligula ut venenatis faucibus, sapien felis sodales lacus, nec mollis ex nisi ultrices arcu. Nam auctor lectus mauris, vitae faucibus ligula auctor sed. Aenean ultricies felis non dui rhoncus, eget porttitor metus aliquet. Curabitur a nulla est. Etiam dictum aliquam diam. Pellentesque ornare posuere arcu sit amet facilisis. Maecenas hendrerit rhoncus dictum. Sed auctor augue in turpis fermentum, vehicula lacinia tortor faucibus. Vivamus ornare gravida placerat. Quisque ultricies in lorem ut maximus.\n\n\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum turpis ex, non mattis nulla blandit at. Etiam ultrices lobortis egestas. Etiam euismod purus nisl, vitae tempus felis gravida sed. Donec id bibendum enim. Sed pharetra, ligula ut venenatis faucibus, sapien felis sodales lacus, nec mollis ex nisi ultrices arcu. Nam auctor lectus mauris, vitae faucibus ligula auctor sed. Aenean ultricies felis non dui rhoncus, eget porttitor metus aliquet. Curabitur a nulla est. Etiam dictum aliquam diam. Pellentesque ornare posuere arcu sit amet facilisis. Maecenas hendrerit rhoncus dictum. Sed auctor augue in turpis fermentum, vehicula lacinia tortor faucibus. Vivamus ornare gravida placerat. Quisque ultricies in lorem ut maximus.',
+    tags: ['blog', 'markojs', 'pwa'],
+    author: {
+        name: 'Gökhan Karadaş',
+        emoji: 'man',
+        github: 'https://github.com/previousdeveloper'
+    }
+}
+
+div.post-summary.${input.type ? input.type : 'white'}
+    div.title
+        a href=mock.link
+            -- ${mock.title}
+    div.author.color-2
+        emoji code=mock.author.emoji
+        a href=mock.author.github -- ${mock.author.name}
+        span
+            emoji code='calendar'
+            -- ${mock.date}
+    div.content -- ${mock.content}
+    div.tags.color-2
+        a for(tag in mock.tags) href='/tag/'+tag
+            emoji code='link'
+            -- ${tag}

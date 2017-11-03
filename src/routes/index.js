@@ -4,6 +4,7 @@ const sw = require('fs').readFileSync(__dirname + '/../pwa/sw.js');
 module.exports = (app) => {
   require('./homepage')(app);
   require('./offline')(app);
+  require('./postdetail')(app);
 
   app.get('/manifest.json', function (req, res) {
     res.end(manifest);
