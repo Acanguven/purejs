@@ -25,7 +25,7 @@ require('lasso').configure({
   ],
   "outputDir": "static",
   "fingerprintsEnabled": true,
-  "minify": true,
+  "minify": false,
   "resolveCssUrls": true,
   "bundlingEnabled": true,
   "relativeUrlsEnabled": true,

@@ -1,7 +1,6 @@
 const manifest = JSON.stringify(require('../pwa/manifest.json'));
 const sw = require('fs').readFileSync(__dirname + '/../pwa/sw.js');
 
-
 module.exports = (app) => {
   require('./homepage')(app);
   require('./offline')(app);
