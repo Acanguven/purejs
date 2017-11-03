@@ -10,6 +10,12 @@
     text-align: center;
     margin-bottom: 20px;
 }
+
+.nav-box.active{
+    background-color: rgba(148,232,46,0.8);
+    color: white;
+}
+
 .nav-text{
     transition-duration: 0.2s;
     font-size: 1.15rem;

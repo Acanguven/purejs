@@ -29,7 +29,7 @@ $ {
 }
 
 div.left-buttons#nav
-    div.nav-box for(navigation in navigations)
+    div.nav-box.${out.global.req.url == navigation.url ? 'active':''} for(navigation in navigations)
         a href=navigation.url
             div.nav-icon
                 emoji code=navigation.emoji
