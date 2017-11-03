@@ -45,6 +45,10 @@
     width: 195px;
 }
 
+#searchTrigger{
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 500px) {
     .header img{
         width: 30px;
