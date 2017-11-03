@@ -2,6 +2,13 @@ style {
     .posts-container{
         float:left;
     }
+
+    @media only screen and (max-width: 880px) {
+        .posts-container {
+            width: 100%;
+            max-width:100% !important;
+        }
+    }
 }
 
 $ const style = 'max-width:'+input.width+'px;'+(input.float ? 'float:'+input.float : '');
