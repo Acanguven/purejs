@@ -89,7 +89,7 @@
         margin-left: 5px;
     }
 
-    .header a img{
+    .header a img:first-child{
         display: none;
     }
 
