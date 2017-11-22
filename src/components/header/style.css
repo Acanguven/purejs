@@ -18,13 +18,10 @@
     height: 50px;
     line-height: 50px;
     float: left;
+    margin-left: 10px;
     font-size: 34px;
     font-weight: 400;
     font-style: normal;
-}
-
-.header a span{
-    margin-left: 10px;
 }
 
 .header div{
@@ -60,8 +57,8 @@
     }
 
     .header a{
-        width: 150px;
-        height: 50px;
+        width: 20px;
+        height: 20px;
         font-size: 21px;
         margin-left: 5px;
     }
@@ -75,7 +72,7 @@
     }
 }
 
-@media only screen and (max-width: 395px) {
+@media only screen and (max-width: 340px) {
     .header img{
         width: 20px;
         height: 20px;
@@ -83,18 +80,10 @@
     }
 
     .header a{
-        width: auto;
-        height: auto;
+        width: 15px;
+        height: 15px;
         font-size: 17px;
         margin-left: 5px;
-    }
-
-    .header a img:first-child{
-        display: none;
-    }
-
-    .header a span{
-        display: none;
     }
 
     .header div span {
