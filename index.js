@@ -42,6 +42,14 @@ const markoExpress = require('marko/express');
 const compression = require('compression');
 const helmet = require('helmet');
 
+const http = require('http');
+http.createServer(function (req, res) {
+  res.writeHead(301, { "Location": "https://" + req.headers['host'] + req.url });
+  res.end();
+}).listen(80);
+
+
+
 const app = express();
 app.use(helmet());
 app.use(require('lasso/middleware').serveStatic());
