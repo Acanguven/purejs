@@ -56,8 +56,9 @@ app.get('/static/*', function (req, res, next) {
   res.setHeader('Cache-Control', 'public, max-age=31536000');
   next();
 });
-app.use(require('lasso/middleware').serveStatic());
+
 app.use(compression());
+app.use(require('lasso/middleware').serveStatic());
 app.use(markoExpress());
 
 
