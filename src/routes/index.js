@@ -5,7 +5,7 @@ module.exports = (app) => {
   // require('./homepage')(app);
   // require('./offline')(app);
   // require('./postdetail')(app);
-  require('./soon')(app);
+
 
   app.get('/manifest.json', function (req, res) {
     res.end(manifest);
@@ -15,4 +15,6 @@ module.exports = (app) => {
     res.setHeader('content-type', 'text/javascript');
     res.end(sw);
   });
+
+  require('./soon')(app);
 };
