@@ -52,7 +52,6 @@ http.createServer(function (req, res) {
 const app = express();
 app.use(helmet());
 app.get('/static/*', function (req, res, next) {
-  console.log(req.url);
   res.setHeader('Cache-Control', 'public, max-age=31536000');
   next();
 });
