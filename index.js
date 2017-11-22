@@ -17,11 +17,11 @@ require('marko/browser-refresh').enable();
 
 
 /* Lasso */
-require('lasso/node-require-no-op').enable('.css', '.less', '.styl', '.scss', '.sass', '.ico','.png', '.svg');
+require('lasso/node-require-no-op').enable('.css', '.less', '.styl', '.scss', '.sass', '.ico', '.png', '.svg');
 require('lasso').configure({
   "plugins": [
-      "lasso-marko",
-      "lasso-image"
+    "lasso-marko",
+    "lasso-image"
   ],
   "outputDir": "static",
   "fingerprintsEnabled": true,
@@ -44,14 +44,18 @@ const helmet = require('helmet');
 
 const http = require('http');
 http.createServer(function (req, res) {
-  res.writeHead(301, { "Location": "https://" + req.headers['host'] + req.url });
+  res.writeHead(301, {"Location": "https://" + req.headers['host'] + req.url});
   res.end();
 }).listen(80);
 
 
-
 const app = express();
 app.use(helmet());
+app.get('/static/*', function (req, res, next) {
+  console.log(req.url);
+  res.setHeader('Cache-Control', 'public, max-age=31536000');
+  next();
+});
 app.use(require('lasso/middleware').serveStatic());
 app.use(compression());
 app.use(markoExpress());
@@ -59,7 +63,7 @@ app.use(markoExpress());
 
 const options = {
   key: fs.readFileSync('./ssl/server.key'),
-  cert:  fs.readFileSync('./ssl/server.crt')
+  cert: fs.readFileSync('./ssl/server.crt')
 };
 
 
