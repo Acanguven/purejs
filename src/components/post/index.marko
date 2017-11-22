@@ -21,7 +21,7 @@ div.post-summary.${input.type ? input.type : 'white'}
         span
             emoji code='calendar'
             -- ${mock.date}
-    div.content -- ${mock.content}
+    div.content -- $!{mock.content}
     div.tags.color-2
         a for(tag in mock.tags) href='/tag/'+tag
             emoji code='link'
