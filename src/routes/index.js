@@ -20,7 +20,6 @@ module.exports = (app) => {
 
   app.use('/pwa', express.static(__dirname + '/../pwa'));
 
-
   require('./offline')(app);
   require('./soon')(app);
 };
